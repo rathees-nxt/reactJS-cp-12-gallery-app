@@ -1,0 +1,55 @@
+/* Write your code here. */
+.app-container {
+  display: flex;
+  justify-content: center;
+}
+.gallery-app-container {
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+  max-width: 1110px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.gallery-img {
+  border-radius: 18px;
+}
+@media screen and (min-width: 768px) {
+  .gallery-img {
+    height: 500px;
+  }
+  .gallery-app-container {
+    max-width: 1100px;
+    padding-top: 130px;
+  }
+}
+.header {
+  font-family: roboto;
+  font-size: 17px;
+  font-weight: 500;
+  color: #1e293b;
+  margin-top: 21px;
+}
+.para {
+  font-family: roboto;
+  font-size: 14px;
+  color: #64748b;
+  font-weight: 500;
+}
+.img-card-container {
+  display: flex;
+  padding: 0px;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+@media screen and (min-width: 768px) {
+  .img-card-container {
+    justify-content: flex-start;
+  }
+  .header {
+    font-size: 27px;
+  }
+  .para {
+    font-size: 23px;
+  }
+}
